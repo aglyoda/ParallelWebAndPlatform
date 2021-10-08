@@ -1,0 +1,729 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Example Report Title</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Example Report Name</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 7, 2021 08:21:22 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">browserTabHeading.feature</p>
+            <p class="text-sm">
+              <span>8:21:24 PM</span> / <span>00:00:03:725</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">browserTabHeading.feature</h5>
+<span class='badge badge-success'>10.07.2021 8:21:24 PM</span>
+<span class='badge badge-danger'>10.07.2021 8:21:28 PM</span>
+<span class='badge badge-default'>00:00:03:725</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>30:01:488</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="2"><span>Bing displays correct title in web browser heading</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:492</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="4"><span>When   User navigate to "https://www.bing.com/" in web browser</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:21:26 PM</td>
+        <td>
+          PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:26 PM</td>
+        <td>
+          adac49cd-2bac-42fe-aaa6-1266cfc689b6
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>30:00:083</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="6"><span>Then   Correct title "Bing1" is displayed in web browser tab</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:21:26 PM</td>
+        <td>
+          FAILED
+    <div class="row mb-3"><div class="col-md-3">
+        <a href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAZYCAYAAADJwUexAAABKmlDQ1BTa2lhAAAokX2RPU8CQRCGH4mNSqFRo4XFlTQqYOQjYiGoREvQBO2O40KMcF6OM9rT+iOs7SyNCTWNlYmVsbM3MbHFd6E4EoOzmZ1n3539mF2IrSKLzUPbC4NKuWjVzs4txsx2Oj6TbQp+3kwPr+v/5E2ymYbbcRS/5GGgw7VlQ7zUHPGt4fqI7wwHJ5WS+F6caI5xfYxvQj8U902+4weG38WFduvaie5N3PVOq4o1+RplrtSatHDZpMolF9iiJAfkybGluKe2LU+RlpIno1GSEkWy6rMcSslpLsX+kJURvWf3A3Z7g8HgOdKOe/CYgdmnSEvswEIc+i++HdhDadp8kluE72Vd+wEWP2GuK3XFTEdro7+YUKv1p1aLIzwcNkRpVZMi8wud90y7a0BM3wAAIABJREFUeJzs3X2s3XV9wPHv7S0+oIATKDgfEb1gi8PnzbGppYsx28i2rJkZWWYWbba6zT/2h9n0j2q2Zf/sD4zJyFI1LtnqzHCPxuim1Mf5ECEgtqRFBQRBi4IPqGB7uPtnordATy23Ped9fb3++/3uPd/zyW2avPPN9/zOwhhjeQAAAHNt3awHAAAAphPuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAgPWzHgAAAMYYY3l5edYjHNHCwsJM39+OOwAABAh3AAAIEO4AABCwMMaY78NEAACAHXcAACgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAC1s96AAAAGGOM5eX5/nqhhYWFmb6/HXcAAAgQ7gAAECDcAQAgYGGMMd+HiQAAADvuAABQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABKyf9QAAADDGGMvL8/31QgsLCzN9fzvuAAAQINwBACBAuAMAQMDCGGO+DxMBAAB23AEAoEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCA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ACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAgY7uIAAAIvElEQVQECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q7A/7VbByQAAAAAgv6/bkegKwRgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYCCOENFZ3A0wwgAAAABJRU5ErkJggg==" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+        
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:26 PM</td>
+        <td>
+          fa365cbe-a328-4d55-80a5-133ff04f12a7
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:02:818</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="3"><span>Google displays correct title in web browser heading</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:02:739</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="5"><span>When   User navigate to "https://www.google.com/" in web browser</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:21:28 PM</td>
+        <td>
+          PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:28 PM</td>
+        <td>
+          edabd22b-2be1-4cc3-827b-90abf8489adb
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:075</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="10"><span>Then   Correct title "Google" is displayed in web browser tab</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:21:28 PM</td>
+        <td>
+          PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:28 PM</td>
+        <td>
+          4ad28c79-cbeb-4966-8a34-a8530aa33460
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">browserTabTitle.feature</p>
+            <p class="text-sm">
+              <span>8:21:28 PM</span> / <span>00:00:02:198</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">browserTabTitle.feature</h5>
+<span class='badge badge-success'>10.07.2021 8:21:28 PM</span>
+<span class='badge badge-danger'>10.07.2021 8:21:30 PM</span>
+<span class='badge badge-default'>00:00:02:198</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:02:198</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="8"><span>Google displays correct title in web browser tab</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:02:130</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="9"><span>When   User navigate to "https://www.google.com/" in web browser</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:21:30 PM</td>
+        <td>
+          PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:30 PM</td>
+        <td>
+          22d8a429-e07a-4389-b590-4d8b37c4611f
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:067</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="14"><span>Then   Correct title "Google" is displayed in web browser tab</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:21:30 PM</td>
+        <td>
+          PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:30 PM</td>
+        <td>
+          6e1536bd-4dd8-4aea-9a8d-da2a5c430d54
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>30:00:541</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="11"><span>Bing displays correct title in web browser tab</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:461</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="12"><span>When   User navigate to "https://www.bing.com/" in web browser</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:21:29 PM</td>
+        <td>
+          PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:29 PM</td>
+        <td>
+          0a55a9dc-f759-40b3-bccd-ec6a78c538ea
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>30:00:079</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="13"><span>Then   Correct title "Bing1" is displayed in web browser tab</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:21:29 PM</td>
+        <td>
+          FAILED
+    <div class="row mb-3"><div class="col-md-3">
+        <a href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAZYCAYAAADJwUexAAABKmlDQ1BTa2lhAAAokX2RPU8CQRCGH4mNSqFRo4XFlTQqYOQjYiGoREvQBO2O40KMcF6OM9rT+iOs7SyNCTWNlYmVsbM3MbHFd6E4EoOzmZ1n3539mF2IrSKLzUPbC4NKuWjVzs4txsx2Oj6TbQp+3kwPr+v/5E2ymYbbcRS/5GGgw7VlQ7zUHPGt4fqI7wwHJ5WS+F6caI5xfYxvQj8U902+4weG38WFduvaie5N3PVOq4o1+RplrtSatHDZpMolF9iiJAfkybGluKe2LU+RlpIno1GSEkWy6rMcSslpLsX+kJURvWf3A3Z7g8HgOdKOe/CYgdmnSEvswEIc+i++HdhDadp8kluE72Vd+wEWP2GuK3XFTEdro7+YUKv1p1aLIzwcNkRpVZMi8wud90y7a0BM3wAAIABJREFUeJzs3X2s3XV9wPHv7S0+oIATKDgfEb1gi8PnzbGppYsx28i2rJkZWWYWbba6zT/2h9n0j2q2Zf/sD4zJyFI1LtnqzHCPxuim1Mf5ECEgtqRFBQRBi4IPqGB7uPtnordATy23Ped9fb3++/3uPd/zyW2avPPN9/zOwhhjeQAAAHNt3awHAAAAphPuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAgPWzHgAAAMYYY3l5edYjHNHCwsJM39+OOwAABAh3AAAIEO4AABCwMMaY78NEAACAHXcAACgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAC1s96AAAAGGOM5eX5/nqhhYWFmb6/HXcAAAgQ7gAAECDcAQAgYGGMMd+HiQAAADvuAABQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABKyf9QAAADDGGMvL8/31QgsLCzN9fzvuAAAQINwBACBAuAMAQMDCGGO+DxMBAAB23AEAoEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCA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ACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAgY7uIAAAIvElEQVQECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q4AAAHCHQAAAoQ7AAAECHcAAAgQ7gAAECDcAQAgQLgDAECAcAcAgADhDgAAAcIdAAAChDsAAAQIdwAACBDuAAAQINwBACBAuAMAQIBwBwCAAOEOAAABwh0AAAKEOwAABAh3AAAIEO4AABAg3AEAIEC4AwBAgHAHAIAA4Q7A/7VbByQAAAAAgv6/bkegKwRgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYEDcAQBgQNwBAGBA3AEAYCCOENFZ3A0wwgAAAABJRU5ErkJggg==" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+        
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:21:29 PM</td>
+        <td>
+          106fb079-48e9-4e67-b931-a05e29176027
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 7, 2021 08:21:22 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 7, 2021 08:21:30 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'><b>2</b> steps passed</small></div>
+<div>
+<small data-tooltip='50%'><b>2</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title"></h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'><b>6</b> passed</small></div>
+<div>
+<small data-tooltip='25%'><b>2</b> failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='37%'><b>6</b> events passed</small></div>
+<div>
+<small data-tooltip='12%'><b>2</b> events failed,
+<b data-tooltip='%'>8</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>OS Name</td>
+<td>Mac OS X</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>hulk</td>
+</tr>
+<tr>
+<td>runOnChromeEmulator</td>
+<td>true</td>
+</tr>
+<tr>
+<td>deviceName</td>
+<td>iPhoneX</td>
+</tr>
+<tr>
+<td>deviceWidth</td>
+<td>375</td>
+</tr>
+<tr>
+<td>deviceHeight</td>
+<td>812</td>
+</tr>
+<tr>
+<td>devicePixelRatio</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>environmentName</td>
+<td>qa</td>
+</tr>
+<tr>
+<td>parallelThreadCount</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 2,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 6,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 6,
+failEvents: 2,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 8
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
