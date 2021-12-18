@@ -37,12 +37,16 @@ Add devices which you want to emulate here. You will need Device width in pixels
 ###### Environments
 Add properties file for the environments you want to run your test scenarios in. Generally the enviornments are DEV, QA and UAT.
 
+<img width="674" alt="Screenshot 2021-12-18 at 1 31 16 PM" src="https://user-images.githubusercontent.com/36156465/146634158-a4a6ce03-add0-403c-8db3-61f26a50b12c.png">
+
 ###### Run - run.properties
 - Here you need to specify in how many threads you need to run the tests
 - If you need to run the tests in emulated devices, if yes; which device
 - also the resolution of the web browser e.g. 800X600
 - The Title and name of the test report
 - If basic HTML report needs to be generated having screens for each and every test scenarios run
+
+You can either run the tests using TestNG or by creating Gradle test task using useTestNG()
 
 ## Note
 - This is a continuousaly evolving framework and you can easily extend it by adding additionaly functionalities as per your requirements
